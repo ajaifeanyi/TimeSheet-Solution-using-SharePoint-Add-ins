@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Timesheets for My Approval</title>
+    <link rel="stylesheet" href="../Content/bundle.css" type="text/css" />
+      <link rel="stylesheet" href="../Content/jquery.loading.min.css"  />
+
+    <link rel="stylesheet" href="../Content/styles.css" type="text/css" />
+
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/jquery-ui-1.9.2.min.js"></script>
+    <script src="../Scripts/jtable/jquery.jtable.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.tagsinput.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.autogrow-textarea.js"></script>
+    <script type="text/javascript" src="../Scripts/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../Scripts/modernizr.min.js"></script>
+    <script type="text/javascript" src="../Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.loadTemplate-1.4.4.min.js"></script>
+     <script type="text/javascript" src="../Scripts/notify.min.js"></script>
+     <script type="text/javascript" src="../Scripts/jquery.loading.min.js"></script>
+
+    <!--Custom script-->
+    <script type="text/javascript" src="../Scripts/Custom/Common.js"></script>
+    <script type="text/javascript" src="../Scripts/Custom/ToApproveByMe.js"></script>
+</head>
+<body>
+     <div class="divHeader" >
+        <div class="divPreviousSite"><img src="../Images/leftarrow.png" /> <a id="previousSiteUrl" href="#" class="previousSiteUrl" >Back to the previous site</a>  </div>
+        <div class="divUserInfo"> <span class="spanUserInfo" id="userWelcomeMsg" >  </span></div>
+    </div>
+    <div class="divHeader divHeaderGray" > <span class="spanLicenseInfo" id="spanLicenseInfo" ></span>  </div>
+      
+    <div class="containerWrapper">
+        <!--Menu-->
+        <div id="containerLeft" class="containerLeft" style="float:left;width:200px;margin-top:10px; ">
+            
+        </div>     
+    <!--Main Content-->
+    <div id="containerRight" class="containerRight">
+
+         <div id="topHeader" class="topHeader">
+                 <a href="#" id="menuExpandButton" class="menuExpandButton" data-name="hide"></a>
+                 <h1>Timesheets for My Approval</h1>
+             </div>
+
+             <div id="mainContainer" style="clear: both;">
+                 <span style="margin-top: 15px; display: block;">
+                     <button id="btnApprove" type="button" class="btn btn-primary">Mass approve</button>
+                 </span>
+
+                 <div style="width: 950px; width: 950px; margin-top: 25px">
+                     <div class="jtableContainer" id="PendingRequests"></div>
+                 </div>
+             </div>
+
+    </div>
+</div>
+</body>
+</html>

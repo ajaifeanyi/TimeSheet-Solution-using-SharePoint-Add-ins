@@ -1,0 +1,8 @@
+﻿<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="c941a420-1f3d-413a-bf37-c8c674bb8688" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="EmployeeOrientation_NewEmployeeOrientationComponents\Feature.xml" />
+    <FeatureManifest Location="EmployeeOrientation_Feature1\Feature.xml" />
+    <FeatureManifest Location="EmployeeOrientation_Feature2\Feature.xml" />
+    <FeatureManifest Location="EmployeeOrientation_Feature3\Feature.xml" />
+  </FeatureManifests>
+</Solution>

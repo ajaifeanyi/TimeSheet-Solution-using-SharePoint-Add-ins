@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages">
+    <File Path="Pages\Shared\logo.png" Url="Pages/Shared/logo.png" ReplaceContent="TRUE" />
+    <File Path="Pages\Shared\Menu.html" Url="Pages/Shared/Menu.html" ReplaceContent="TRUE" />
+    <File Path="Pages\Shared\New.aspx" Url="Pages/Shared/New.aspx" ReplaceContent="TRUE" />
+    <File Path="Pages\UserRoleCreate.html" Url="Pages/UserRoleCreate.html" ReplaceContent="TRUE" />
+    <File Path="Pages\UserRolesList.html" Url="Pages/UserRolesList.html" ReplaceContent="TRUE" />
+    <File Path="Pages\CategoryEdit.html" Url="Pages/CategoryEdit.html" ReplaceContent="TRUE" />
+    <File Path="Pages\CategoriesList.html" Url="Pages/CategoriesList.html" ReplaceContent="TRUE" />
+    <File Path="Pages\ToApproveByMe.html" Url="Pages/ToApproveByMe.html" ReplaceContent="TRUE" />
+    <File Path="Pages\TimesheetSummary.html" Url="Pages/TimesheetSummary.html" ReplaceContent="TRUE" />
+    <File Path="Pages\Integrations.html" Url="Pages/Integrations.html" ReplaceContent="TRUE" />
+    <File Path="Pages\EmailTemplates.html" Url="Pages/EmailTemplates.html" ReplaceContent="TRUE" />
+    <File Path="Pages\Default.html" Url="Pages/Default.html" ReplaceContent="TRUE" />
+    <File Path="Pages\ProjectsList.html" Url="Pages/ProjectsList.html" ReplaceContent="TRUE" />
+    <File Path="Pages\ProjectEdit.html" Url="Pages/ProjectEdit.html" ReplaceContent="TRUE" />
+    <File Path="Pages\MyRequests.html" Url="Pages/MyRequests.html" ReplaceContent="TRUE" />
+    <File Path="Pages\Licenses.html" Url="Pages/Licenses.html" ReplaceContent="TRUE" />
+    <File Path="Pages\Settings.html" Url="Pages/Settings.html" ReplaceContent="TRUE" />
+    <File Path="Pages\RequestFormView.html" Url="Pages/RequestFormView.html" ReplaceContent="TRUE" />
+    <File Path="Pages\RequestFormCreate.html" Url="Pages/RequestFormCreate.html" ReplaceContent="TRUE" />
+    <File Path="Pages\ReportsRequests.html" Url="Pages/ReportsRequests.html" ReplaceContent="TRUE" />
+    <File Path="Pages\TimesheetReport.html" Url="Pages/TimesheetReport.html" ReplaceContent="TRUE" />
+    <File Path="Pages\SubstituteApproversList.html" Url="Pages/SubstituteApproversList.html" ReplaceContent="TRUE" />
+    <File Path="Pages\SubstituteApproverEdit.html" Url="Pages/SubstituteApproverEdit.html" ReplaceContent="TRUE" />
+    <File Path="Pages\SubmissionsReport.html" Url="Pages/SubmissionsReport.html" ReplaceContent="TRUE" />
+    <File Path="Pages\UserProfilesList.html" Url="Pages/UserProfilesList.html" ReplaceContent="TRUE" />
+    <File Path="Pages\UserProfileEdit.html" Url="Pages/UserProfileEdit.html" ReplaceContent="TRUE" />
+    <File Path="Pages\error.html" Url="Pages/error.html" ReplaceContent="TRUE" />
+    <File Path="Pages\RequestFormEdit.html" Url="Pages/RequestFormEdit.html" ReplaceContent="TRUE" />
+    <File Path="Pages\TimesheetCostRost.html" Url="Pages/TimesheetCostRost.html" ReplaceContent="TRUE" />
+    <File Path="Pages\UserGuide.html" Url="Pages/UserGuide.html" ReplaceContent="TRUE" />
+    <File Path="Pages\Help.html" Url="Pages/Help.html" ReplaceContent="TRUE" />
+    <File Path="Pages\UploadLogo.html" Url="Pages/UploadLogo.html" ReplaceContent="TRUE" />
+    <File Path="Pages\ImportUserProfiles.html" Url="Pages/ImportUserProfiles.html" ReplaceContent="TRUE" />
+    <File Path="Pages\ImportProjects.html" Url="Pages/ImportProjects.html" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

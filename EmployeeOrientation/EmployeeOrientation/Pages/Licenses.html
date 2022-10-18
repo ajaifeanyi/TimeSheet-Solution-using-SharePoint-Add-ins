@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>License</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../Content/bundle_without_tables.css" type="text/css" />
+    
+
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/jquery-ui-1.9.2.min.js"></script>
+    <script src="../Scripts/jtable/jquery.jtable.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.tagsinput.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.autogrow-textarea.js"></script>
+    <script type="text/javascript" src="../Scripts/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../Scripts/modernizr.min.js"></script>
+    <script type="text/javascript" src="../Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="../Scripts/notify.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.loadTemplate-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../Scripts/sha3.js"></script>
+    
+
+    <!--Custom script-->
+    <script type="text/javascript" src="../Scripts/jquery.validationEngine.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validationEngine-en.js"></script>
+    <link rel="stylesheet" href="../Content/validationEngine-jquery.css" type="text/css" />
+    
+
+    <script type="text/javascript" src="../Scripts/Custom/Common.js"></script>   
+    <script type="text/javascript" src="../Scripts/Custom/Licenses.js"></script>
+
+    <link rel="stylesheet" href="../Content/styles.css" type="text/css" />
+
+</head>
+<body>
+     <div class="divHeader" >
+        <div class="divPreviousSite"><img src="../Images/leftarrow.png" /> <a id="previousSiteUrl" href="#" class="previousSiteUrl" >Back to the previous site</a>  </div>
+        <div class="divUserInfo"> <span class="spanUserInfo" id="userWelcomeMsg" >  </span></div>
+    </div>
+    <div class="divHeader divHeaderGray" > <span class="spanLicenseInfo" id="spanLicenseInfo" ></span>  </div>
+      
+    <div class="containerWrapper">
+        <!--Menu-->
+        <div id="containerLeft" class="containerLeft" style="float:left;width:200px;margin-top:10px; ">
+            
+        </div>     
+    <!--Main Content-->
+    <div id="containerRight" class="containerRight">
+        <div id="topHeader" class="topHeader">
+            <a href="#" id="menuExpandButton" class="menuExpandButton" data-name="hide" ><img src="../Images/menu-icon.png" /></a>
+            <h1>License </h1>
+        </div>
+
+        <div id="mainContainer" style="clear:both;">
+
+             <form id="licenseForm" class="stdform stdform2" method="post" style="display:none;">
+
+                   <div style="margin: 10px;font-size:14px;">
+
+                       <span> Click <a href="#" target="_blank" >here</a> to buy a site license in our Store. </span> <br /><br />
+
+                        <span><b>Enter your Activation Key:</b></span> <br />
+
+                        <p class="control-group" style="border:0px;">
+                                <input type="text" name="txtActivationKey" id="txtActivationKey" class="input-xlarge" placeholder="XXXX-XXXX-XXXX-XXXX-XXXX"  style="width:200px;"  /> 
+                         </p>
+                         
+                        <div style="width:100%;height:20px;margin-top:10px;">
+                        <button id="btnSubmit" type="submit" class="btn btn-primary">Activate</button>
+                        </div>
+                    </div>
+
+               </form>
+
+
+            <div id="validForm" style="display:none;">
+
+                <label style="color:green;font-size:14px;" id="lblMessage"></label> 
+                <br />
+                <label style="font-weight:bold;font-size:14px;" >Activation Key:</label> <label  style="font-size:14px;" id="lblActivationKey"></label>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Projects" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Projects" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100405e009b88a04ef4bd84c5d9b0bd5181" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{da4c1978-0d3e-41f9-b946-d3f493e80b6f}" Name="Id" /><FieldRef ID="{5c11dc57-7464-40d1-969b-e125a01a0b1a}" Name="VisibilityLevel" /><FieldRef ID="{5272e8b6-c67d-4d9f-bda5-e250986b9946}" Name="ModifiedById" /><FieldRef ID="{c331c0b0-e2f9-4be8-9e27-d9e5147c8464}" Name="CreatedById" /><FieldRef ID="{9e742440-78f7-4791-b6ac-f439aed86607}" Name="ComplianceAssetId1" /><FieldRef ID="{67cf1d82-659e-42b6-a483-24085a43879b}" Name="HideFromDelve" /><FieldRef ID="{27aef074-c3da-4afe-b4ea-187249357967}" Name="IsActive1" /><FieldRef ID="{ded18812-545e-45a2-9a24-f1d460896e5f}" Name="ProjectMembersIDs" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="Id" ID="{da4c1978-0d3e-41f9-b946-d3f493e80b6f}" DisplayName="Id" Type="Number" /><Field Name="VisibilityLevel" ID="{5c11dc57-7464-40d1-969b-e125a01a0b1a}" DisplayName="VisibilityLevel" Type="Text" /><Field Name="ModifiedById" ID="{5272e8b6-c67d-4d9f-bda5-e250986b9946}" DisplayName="ModifiedById" Type="Number" /><Field Name="CreatedById" ID="{c331c0b0-e2f9-4be8-9e27-d9e5147c8464}" DisplayName="CreatedById" Type="Number" /><Field Name="ComplianceAssetId1" ID="{9e742440-78f7-4791-b6ac-f439aed86607}" DisplayName="ComplianceAssetId" Type="Text" /><Field Name="HideFromDelve" ID="{67cf1d82-659e-42b6-a483-24085a43879b}" DisplayName="HideFromDelve" Type="Boolean" /><Field Name="IsActive1" ID="{27aef074-c3da-4afe-b4ea-187249357967}" DisplayName="IsActive" Type="Boolean" /><Field Name="ProjectMembersIDs" ID="{ded18812-545e-45a2-9a24-f1d460896e5f}" DisplayName="ProjectMembersIDs" Type="Note" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="VisibilityLevel" /><FieldRef Name="ModifiedById" /><FieldRef Name="CreatedById" /><FieldRef Name="ComplianceAssetId1" /><FieldRef Name="HideFromDelve" /><FieldRef Name="IsActive1" /><FieldRef Name="ProjectMembersIDs" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

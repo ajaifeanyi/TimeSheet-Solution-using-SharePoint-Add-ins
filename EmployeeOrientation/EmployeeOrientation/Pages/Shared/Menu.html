@@ -1,0 +1,138 @@
+﻿
+<a href="Default.html"> <div id="logoleft" class="mainLogo"> </div>  </a>
+
+
+<div id="menuleft" class="ui-sortable ui-resizable" style="float: left; line-height: normal;">
+    <div class="navigation">
+        <div class="navigation-title">
+            <a class="toggle-navigation" href="#">
+                <span>My Timesheets</span>
+            </a>
+        </div>
+        <ul class="navigation-menu">
+            <li class="dropdown"></li>
+            <li>
+                <a href="MyRequests.html?status=Draft">Drafts</a>
+            </li>
+            <li>
+                <a href="MyRequests.html?status=Pending Approval">Pending Approval</a>
+            </li>
+            <li>
+                <a href="MyRequests.html?status=Rejected">Rejected</a>
+            </li>
+            <li>
+                <a href="MyRequests.html?status=Approved">Approved</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="navigation" id="manageRequestsPanel" style="display:none;">
+        <div class="navigation-title">
+            <a class="toggle-navigation" href="#">
+                <span>Team Management</span>
+            </a>
+        </div>
+        <ul class="navigation-menu">
+            <li class="dropdown"></li>
+            <li>
+                <a href="ToApproveByMe.html">Timesheets for My Approval</a>
+            </li>
+            <li>
+                <a href="ReportsRequests.html?mode=MyTeam">My Team's Timesheets</a>
+            </li>
+
+            <li>
+                <a href="TimesheetSummary.html">Timesheets Summary</a>
+            </li>
+
+            <li>
+                <a href="SubmissionsReport.html?mode=MyTeam">Submissions Report</a>
+            </li>
+
+
+
+            <li>
+                <a href="TimesheetReport.html?mode=MyTeam">Total Hours Report</a>
+            </li>
+            <li id="linkTotalCostsReport" style="display:none;">
+                <a href="TimesheetCostReport.html?mode=MyTeam">Total Cost Report</a>
+            </li>
+
+            <li>
+                <a href="SubstituteApproversList.html?My=true">My Substitute Approver</a>
+            </li>
+        </ul>
+    </div>
+    <div class="navigation" id="adminNavPanel" style="display:none;">
+        <div class="navigation-title">
+            <a class="toggle-navigation" href="#">
+                <span>Administration</span>
+            </a>
+        </div>
+        <ul class="navigation-menu">
+            <li class="dropdown"></li>
+            <li>
+                <a href="Settings.html">Settings</a>
+            </li>
+            <li>
+                <a href="UserRolesList.html">User Roles</a>
+            </li>
+            <li>
+                <a href="UserProfilesList.html">User Profiles</a>
+            </li>
+            <li>
+                <a href="SubstituteApproversList.html">Substitute Approvers</a>
+            </li>
+            <li>
+                <a href="ProjectsList.html">Projects</a>
+            </li>
+            <li>
+                <a href="CategoriesList.html">Categories</a>
+            </li>
+            <li>
+                <a href="EmailTemplates.html">Email Templates</a>
+            </li>
+            <li>
+                <a href="ReportsRequests.html?mode=All">All Timesheets</a>
+            </li>
+            <li>
+                <a href="Integrations.html">Integrations</a>
+            </li>
+            <li>
+                <a href="Licenses.html">License</a>
+            </li>
+            <li>
+                <a href="Help.html">Help</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+     if (CurrentUser.IsAdmin)
+     {
+         $('#adminNavPanel').show();
+     }
+
+     if (CurrentUser.IsAdmin || CurrentUser.IsManager) {
+         $('#manageRequestsPanel').show();
+     }
+
+     if (SystemSettings.BillingAmount) {
+         $('#linkTotalCostsReport').show();
+     }
+
+
+     var appLogoURL = appweburl + "/Images/logo.png";
+     if (SystemSettings.AppLogo == 'custom' && SystemSettings.AppLogoFile != 'empty') {
+         appLogoURL = appweburl + "/Lists/ImagesUploads/Attachments/1/" + SystemSettings.AppLogoFile;
+     }
+
+     $('#logoleft').css('background-image', "url('" + appLogoURL + "')");
+
+
+</script>

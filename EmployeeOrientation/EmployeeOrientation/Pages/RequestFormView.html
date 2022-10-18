@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../Content/bundle_without_tables.css" type="text/css" />
+    <link rel="stylesheet" href="../Content/style.default.css" type="text/css" />
+
+
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-ui-1.9.2.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.tagsinput.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.autogrow-textarea.js"></script>
+    <script type="text/javascript" src="../Scripts/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../Scripts/modernizr.min.js"></script>
+    <script type="text/javascript" src="../Scripts/elements.js"></script>
+    <script type="text/javascript" src="../Scripts/prettify/prettify.js"></script>
+    <script type="text/javascript" src="../Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.loadTemplate-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../Scripts/notify.min.js"></script>
+
+      <script type="text/javascript" src="../Scripts/xlsx.core.min.js"></script>
+    <script type="text/javascript" src="../Scripts/Blob.min.js"></script>
+    <script type="text/javascript" src="../Scripts/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jspdf.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jspdf.plugin.autotable.js"></script>
+    <script type="text/javascript" src="../Scripts/tableExport.min.js"></script>
+    
+
+    <!--Custom script-->
+    <script type="text/javascript" src="../Scripts/Custom/Common.js"></script>
+    <script type="text/javascript" src="../Scripts/Custom/FormBuilder.js"></script>
+    <script type="text/javascript" src="../Scripts/Custom/RequestFormView.js"></script>
+
+    <script src="../Scripts/handsontable.full.min.js"></script>
+    <link rel="stylesheet" media="screen" href="../Content/handsontable.full.min.css" />
+    <link rel="stylesheet" href="../Content/styles.css" type="text/css" />
+  
+</head>
+<body>
+     <div class="divHeader" >
+        <div class="divPreviousSite"><img src="../Images/leftarrow.png" /> <a id="previousSiteUrl" href="#" class="previousSiteUrl" >Back to the previous site</a>  </div>
+        <div class="divUserInfo"> <span class="spanUserInfo" id="userWelcomeMsg" >  </span></div>
+    </div>
+    <div class="divHeader divHeaderGray" > <span class="spanLicenseInfo" id="spanLicenseInfo" ></span>  </div>
+      
+    <div class="containerWrapper">
+        <!--Menu-->
+        <div id="containerLeft" class="containerLeft" style="float:left;width:200px;margin-top:10px; ">
+            
+        </div>     
+    <!--Main Content-->
+    <div id="containerRight" class="containerRight">
+        <div id="topHeader" class="topHeader">
+                <a href="#" id="menuExpandButton" class="menuExpandButton" data-name="hide">
+                    <img src="../Images/menu-icon.png"></a>
+                <h1>Timesheet Details</h1>
+            </div>
+
+            <div id="mainContainer" style="clear: both;">
+
+                <div class="maincontent">
+
+
+                    <form id="requestFormCreate" class="stdform stdform2" method="post" action="RequestFormCreate.html">
+
+                        <div style="margin: 10px;">
+
+                            <button id="btnEditRequest" type="button" class="btn btn-primary">Edit request</button>
+
+                            <button id="btnSendRequestToApprove" type="button" class="btn btn-primary" style="display: none;">Send to approve</button>
+                            <button id="btnApproveRequest" type="button" class="btn btn-primary" style="display: none;">Approve</button>
+                            <button id="btnRejectRequest" type="button" class="btn btn-primary" style="display: none;">Reject</button>
+                          
+                        
+                            <button id="btnForceApproveRequest" type="button" class="btn btn-primary" style="display:none;">Force Approve</button>
+                            <button id="btnForceRejectRequest" type="button" class="btn btn-primary" style="display:none;">Force Reject</button>
+
+                            <div class="btn-group">
+                                <a class="btn" data-toggle="dropdown" id="exportTimesheets" href="#">Export timesheet<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" id="btnExportDetailsCSV">Export to CSV</a></li>
+                                    <li><a href="#" id="btnExportDetailsXLSX">Export to MS Excel</a></li>
+                                </ul>
+                            </div>
+
+                            <div id="divValidationSummary" style="margin: 5px; display: none;">
+                                <label id="lblValidationSummary" class="error">Please fix the validation errors</label>
+                            </div>
+
+                        </div>
+
+
+                        <div class="tabbedwidget tab-primary" id="formTabs">
+                            <ul id="tabs">
+                                <li><a href="#aRequestDetails">General Info</a></li>
+                                <li id="liTimeSheetDetails"><a href="#aTimeSheetDetails">TimeSheet Details</a></li>
+                                <li id="liAttachments"><a href="#aAttachments">Attachments</a></li>
+                            </ul>
+                            <div id="aRequestDetails">
+
+                                <p class="control-group">
+                                    <label>Period</label>
+                                    <span class="field"><span id="lblPeriod" class="sLabel"></span></span>
+                                </p>
+
+                                <p class="control-group">
+                                    <label>Period Start</label>
+                                    <span class="field"><span id="lblPeriodStart" class="sLabel"></span></span>
+                                </p>
+
+                                <p class="control-group">
+                                    <label>User Name</label>
+                                    <span class="field"><span id="lblRequesterName" class="sLabel"></span></span>
+                                </p>
+
+                                <p class="control-group">
+                                    <label>Status</label>
+                                    <span class="field"><span id="lblStatus" class="sLabel"></span></span>
+                                </p>
+
+                                <p>
+                                    <label>Created Date</label>
+                                    <span class="field"><span id="lblCreatedDate" class="sLabel"></span></span>
+                                </p>
+
+                                <p>
+                                    <label>Modified Date</label>
+                                    <span class="field"><span id="lblModifiedDate" class="sLabel"></span></span>
+                                </p>
+
+                                <p id="pRejectReason">
+                                    <label>Reject Reason</label>
+                                    <span class="field" style="color: red"><span id="lblRejectReason" class="sLabel"></span></span>
+                                </p>
+
+
+                            </div>
+
+                            <div id="aTimeSheetDetails">
+
+                                <p class="control-group">
+
+                                    <label id="lblTotal" style="width: 220px;padding-bottom:10px;"></label>
+                                    <label id="lblBillableHours" style="width: 180px; display: none;padding-bottom:10px;"></label>
+                                    <label id="lblBillingAmountTotal" style="width: 240px; display: none;padding-bottom:10px;"></label>
+
+                                    <table id="tDaysSummary" style="clear:both;border-collapse: collapse;padding-top:15px;display:none;" >
+                                     <tr id="trDaysSummary">
+                                     </tr>
+                                    </table>
+                                    <div id="divTimeSheet" style="clear: both; "></div>
+
+                                </p>
+                            </div>
+
+                            <div id="aAttachments">
+
+                                <div style="display: none; margin: 10px;" id="noAttachments">
+                                    No attachments uploaded
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <!--tabbedwidget-->
+                    </form>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="dialog-confirm-approve" title="Are you sure?" style="display: none;">
+        <p>
+            This request will be approved. Are you sure?                                                                                         
+        </p>
+    </div>
+
+    <div id="dialog-confirm-reject" title="Are you sure?" style="display: none;">
+
+        <form id="rejectForm" action="#">
+            <p>
+                This request will be rejected.
+                <br />
+                Please enter reject reason.<br />
+                <input id="txtRejectReason" type="text" name="txtRejectReason" class="input-xlarge" />
+            </p>
+
+        </form>
+
+    </div>
+
+    <div id="dialog-force-confirm-approve" title="Are you sure?" style="display:none;">
+        <p>
+            This request will be approved. Are you sure?                                                                                         
+        </p>
+    </div>
+
+    <div id="dialog-force-confirm-reject" title="Are you sure?" style="display:none;">
+
+        <form id="rejectForm" action="#">
+        <p>
+            This request will be rejected. <br />
+            Please enter reject reason.<br />
+            <input id="txtRejectReason" type="text" name="txtRejectReason" class="input-xlarge"  />
+        </p>
+
+        </form>            
+
+    </div>
+
+
+     <table id="tableToExport" class="jtable" style="display:none;width:100%;" data-tableexport-display="always" >
+   </table>  
+</body>
+</html>

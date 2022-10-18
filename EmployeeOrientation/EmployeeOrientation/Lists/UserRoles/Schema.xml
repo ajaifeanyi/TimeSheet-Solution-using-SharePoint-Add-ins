@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="UserRoles" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/UserRoles" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100e012aca1a6a24635828b1a50a207e9fd" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="RoleName" /><FieldRef ID="{3ebf0920-19d8-4bd7-ab4a-bb2f19344e70}" Name="EmployeeName" /><FieldRef ID="{bc3cf9db-ca72-471b-9f17-7c8b5b07d8e5}" Name="Employee" /><FieldRef ID="{f02f0489-ad6a-4937-a528-ed75bae5325e}" Name="Id" /><FieldRef ID="{d37aad4f-6213-4166-85e0-af2c0410e796}" Name="HideFromDelve" /><FieldRef ID="{dda0e6e0-6c98-4bd0-8124-d679dff6f0b0}" Name="ModifiedById" /><FieldRef ID="{2c488090-4f3a-41d9-911f-5ce364bf92bb}" Name="CreatedById" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+	  
+    <Fields>  
+    
+	
+	
+	<Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="RoleName" DisplayName="RoleName" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="RoleName" MaxLength="255" /><Field Name="EmployeeName" ID="{3ebf0920-19d8-4bd7-ab4a-bb2f19344e70}" DisplayName="EmployeeName" Type="Text" Required="FALSE" /><Field Name="Employee" ID="{bc3cf9db-ca72-471b-9f17-7c8b5b07d8e5}" DisplayName="Employee" Type="User" List="UserInfo" /><Field Name="Id" ID="{f02f0489-ad6a-4937-a528-ed75bae5325e}" DisplayName="Id" Type="Number" /><Field Name="HideFromDelve" ID="{d37aad4f-6213-4166-85e0-af2c0410e796}" DisplayName="HideFromDelve" Type="Boolean" /><Field Name="ModifiedById" ID="{dda0e6e0-6c98-4bd0-8124-d679dff6f0b0}" DisplayName="ModifiedById" Type="Number" /><Field Name="CreatedById" ID="{2c488090-4f3a-41d9-911f-5ce364bf92bb}" DisplayName="CreatedById" Type="Number" /></Fields>
+	  
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="ID" /><FieldRef Name="RoleName" /><FieldRef Name="EmployeeName" /><FieldRef Name="Employee" /><FieldRef Name="Id" /><FieldRef Name="HideFromDelve" /><FieldRef Name="ModifiedById" /><FieldRef Name="CreatedById" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View><View BaseViewID="2" Name="81cec8ba-af3e-4b4d-8b92-ec73b425ac3b" DisplayName="items" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="items.aspx"><RowLimit>30</RowLimit><ViewFields><FieldRef Name="ID" /><FieldRef Name="RoleName" /><FieldRef Name="EmployeeName" /><FieldRef Name="Employee" /></ViewFields><Query /><Toolbar Type="Standard" /><XslLink Default="TRUE">main.xsl</XslLink><JSLink>clienttemplates.js</JSLink></View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

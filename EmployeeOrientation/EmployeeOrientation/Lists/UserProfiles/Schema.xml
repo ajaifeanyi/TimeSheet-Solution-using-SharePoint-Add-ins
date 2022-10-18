@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="UserProfiles" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/UserProfiles" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100c86d1cd63fd44fe788a1dd5428454dd6" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{bc3b54bb-07f5-4e9a-ac49-3aee563f1453}" Name="HourlyRate" /><FieldRef ID="{9ccad829-29f9-4f46-8972-ba80d9ae8e3a}" Name="SecondApproverId" /><FieldRef ID="{aefce1ef-9660-4542-bbeb-2d09ce32c825}" Name="FirstApproverId" /><FieldRef ID="{2dfad0fc-f82c-4b04-8d88-b7ccbdaac0a6}" Name="ModifiedById" /><FieldRef ID="{432f937e-c6fd-4b30-a520-9ef843e21967}" Name="CreatedById" /><FieldRef ID="{4d9fe929-3f1c-4cc9-b280-67c03ba45ba5}" Name="HideFromDelve" /><FieldRef ID="{e28d1b15-7c14-4099-a7dc-d08ab864e66b}" Name="ManagerName" /><FieldRef ID="{0d701d97-8b33-4e09-a25b-c43e2479cfa7}" Name="Manager" /><FieldRef ID="{bc2c5e13-06cb-43d0-a2be-84515d173d62}" Name="FirstApproverName" /><FieldRef ID="{010b42c3-943b-434f-bf9a-9625f937bce4}" Name="SecondApproverName" /><FieldRef ID="{e24e78a5-388a-4dce-b9b6-bf92dbcc64da}" Name="UserName1" /><FieldRef ID="{9b61ec49-08e7-4ea2-8d8b-800894821245}" Name="qUser" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field Name="HourlyRate" ID="{bc3b54bb-07f5-4e9a-ac49-3aee563f1453}" DisplayName="HourlyRate" Type="Text" /><Field Name="SecondApproverId" ID="{9ccad829-29f9-4f46-8972-ba80d9ae8e3a}" DisplayName="SecondApproverId" Type="Text" /><Field Name="FirstApproverId" ID="{aefce1ef-9660-4542-bbeb-2d09ce32c825}" DisplayName="FirstApproverId" Type="Text" /><Field Name="ModifiedById" ID="{2dfad0fc-f82c-4b04-8d88-b7ccbdaac0a6}" DisplayName="ModifiedById" Type="Number" /><Field Name="CreatedById" ID="{432f937e-c6fd-4b30-a520-9ef843e21967}" DisplayName="CreatedById" Type="Number" /><Field Name="HideFromDelve" ID="{4d9fe929-3f1c-4cc9-b280-67c03ba45ba5}" DisplayName="HideFromDelve" Type="Boolean" /><Field Name="ManagerName" ID="{e28d1b15-7c14-4099-a7dc-d08ab864e66b}" DisplayName="ManagerName" Type="Text" /><Field Name="Manager" ID="{0d701d97-8b33-4e09-a25b-c43e2479cfa7}" DisplayName="Manager" Type="User" List="UserInfo" /><Field Name="FirstApproverName" ID="{bc2c5e13-06cb-43d0-a2be-84515d173d62}" DisplayName="FirstApproverName" Type="Text" /><Field Name="SecondApproverName" ID="{010b42c3-943b-434f-bf9a-9625f937bce4}" DisplayName="SecondApproverName" Type="Text" /><Field Name="UserName1" ID="{e24e78a5-388a-4dce-b9b6-bf92dbcc64da}" DisplayName="UserName1" Type="Text" /><Field Name="qUser" ID="{9b61ec49-08e7-4ea2-8d8b-800894821245}" DisplayName="User" Type="User" List="UserInfo" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="HourlyRate" /><FieldRef Name="SecondApproverId" /><FieldRef Name="FirstApproverId" /><FieldRef Name="ModifiedById" /><FieldRef Name="CreatedById" /><FieldRef Name="HideFromDelve" /><FieldRef Name="ManagerName" /><FieldRef Name="Manager" /><FieldRef Name="FirstApproverName" /><FieldRef Name="SecondApproverName" /><FieldRef Name="UserName1" /><FieldRef Name="ID" /><FieldRef Name="qUser" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

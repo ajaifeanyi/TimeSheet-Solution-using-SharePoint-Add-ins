@@ -1,0 +1,125 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <link rel="stylesheet" href="../Content/bundle_without_tables.css" type="text/css" />
+    <style type="text/css">
+        .stdform2 span.field, .stdform2 div.field {
+            margin-left: 320px;
+        }
+
+        .stdform label {
+            width: 320px;
+            padding-top: 10px;
+        }
+
+        .stdform input {
+            border: 0px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../Scripts/jtable/themes/metro/blue/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="../Scripts/jtable/themes/metro/blue/jtable.css" type="text/css" />
+
+
+
+
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-ui-1.9.2.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jtable/jquery.jtable.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../Scripts/modernizr.min.js"></script>
+    <script type="text/javascript" src="../Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.loadTemplate-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../Scripts/notify.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.MultiFile.min.js"></script>
+
+    <!--Custom script-->
+    <script type="text/javascript" src="../Scripts/jquery.validationEngine.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validationEngine-en.js"></script>
+    <link rel="stylesheet" href="../Content/validationEngine-jquery.css" type="text/css" />
+
+
+    <script type="text/javascript" src="../Scripts/Custom/Common.js"></script>
+    <script type="text/javascript" src="../Scripts/Custom/UploadLogo.js"></script>
+
+    <link rel="stylesheet" href="../Content/styles.css" type="text/css" />
+
+    <title>Upload Logo</title>
+</head>
+
+
+<body>
+    <!--Header-->
+    <div class="divHeader">
+        <div class="divPreviousSite">
+            <img src="../Images/leftarrow.png" />
+            <a id="previousSiteUrl" href="#" class="previousSiteUrl">Back to the previous site</a>
+        </div>
+        <div class="divUserInfo"><span class="spanUserInfo" id="userWelcomeMsg"></span></div>
+    </div>
+    <div class="divHeader divHeaderGray"></div>
+
+    <div class="containerWrapper">
+
+        <!--Menu-->
+        <div id="containerLeft" class="containerLeft" style="float: left; width: 200px; margin-top: 10px;"></div>
+
+        <!--Main Content-->
+        <div id="containerRight" class="containerRight">
+
+            <div id="topHeader" class="topHeader">
+                <a href="#" id="menuExpandButton" class="menuExpandButton" data-name="hide"><img src="../Images/menu-icon.png"></a>
+                <h1>Upload Logo</h1>
+            </div>
+
+            <div id="mainContainer" style="clear: both;">
+                <div class="maincontent">
+
+                    <form id="uploadLogoForm" class="stdform stdform2" method="post">
+
+
+                        <div style="margin: 10px;">
+                            <button id="btnSubmit" type="submit" class="btn btn-primary">Save Logo</button>
+                            <a id="btnBack" href="Settings.aspx" class="btn">Back to settings</a>
+                        </div>
+
+                        <div class="greyContainer" style="width:700px;">
+
+                            <p class="control-group">
+                                <label>
+                                    Upload from file <br />
+                                    <span style="font-size:11px;font-weight: normal;">
+                                        PNG, JPG or GIF, required dimensions: <b>180x75 px</b>
+
+                                    </span>
+                                </label>
+                                <span class="field">
+                                    <input type="checkbox" name="chbPreview" id="chbPreview" checked="checked" /> Preview before save <br />
+
+                                    <input type="file" id="fileUpload" accept="image/*" />
+                                </span>
+                            </p>
+
+
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Create User Role</title>
+    <link rel="stylesheet" href="../Content/bundle_without_tables.css" type="text/css" />
+    <link rel="stylesheet" href="../Content/css/select2.css" type="text/css" />
+    <link rel="stylesheet" href="../Content/select2-bootstrap.css" type="text/css" />
+
+
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-ui-1.9.2.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.tagsinput.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.autogrow-textarea.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../Scripts/modernizr.min.js"></script>
+    <script type="text/javascript" src="../Scripts/elements.js"></script>
+    <script type="text/javascript" src="../Scripts/prettify/prettify.js"></script>
+    <script type="text/javascript" src="../Scripts/select2.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/notify.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.loadTemplate-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.MultiFile.min.js"></script>
+    <script type="text/javascript" src="../Scripts/opentip-jquery.min.js"></script>
+
+    <!--Custom script-->
+    <script type="text/javascript" src="../Scripts/Custom/Common.js"></script>
+    <script type="text/javascript" src="../Scripts/Custom/UserRoleCreate.js"></script>
+
+
+    <link rel="stylesheet" href="../Content/styles.css" type="text/css" />
+</head>
+<body>
+    <div class="divHeader">
+        <div class="divPreviousSite"><img src="../Images/leftarrow.png" /> <a id="previousSiteUrl" href="#" class="previousSiteUrl">Back to the previous site</a>  </div>
+        <div class="divUserInfo"> <span class="spanUserInfo" id="userWelcomeMsg">  </span></div>
+    </div>
+    <div class="divHeader divHeaderGray"> <span class="spanLicenseInfo" id="spanLicenseInfo"></span>  </div>
+    <div class="containerWrapper">
+
+        <!--Menu-->
+        <div id="containerLeft" class="containerLeft" style="float: left; width: 200px; margin-top: 10px;">
+
+
+            <!-- <script type="text/javascript">
+                  if (CurrentUser.IsAdmin) {
+                      $('#adminNavPanel').show();
+                  }
+
+                  if (CurrentUser.IsAdmin || CurrentUser.IsManager) {
+                      $('#manageRequestsPanel').show();
+                  }
+
+                  if (SystemSettings.BillingAmount) {
+                      $('#linkTotalCostsReport').show();
+                  }
+
+
+                  var appLogoURL = appweburl + "/Images/logo.png";
+                  if (SystemSettings.AppLogo == 'custom' && SystemSettings.AppLogoFile != 'empty') {
+                      appLogoURL = appweburl + "/Lists/ImagesUploads/Attachments/1/" + SystemSettings.AppLogoFile;
+                  }
+
+                  $('#logoleft').css('background-image', "url('" + appLogoURL + "')");
+
+
+              </script>-->
+        </div>
+
+        <!--Main Content-->
+        <div id="containerRight" class="containerRight">
+
+            <div id="topHeader" class="topHeader">
+                <a href="#" id="menuExpandButton" class="menuExpandButton" data-name="hide"><img src="../Images/menu-icon.png"></a>
+                <h1>Create New User Role</h1>
+            </div>
+
+            <div id="mainContainer" style="clear: both;">
+                <div class="maincontent">
+
+                    <form id="userRoleCreate" class="stdform stdform2" method="post" novalidate="novalidate">
+
+
+                        <div style="margin: 10px;">
+                            <button id="btnSubmit" type="submit" class="btn btn-primary">Save</button>
+                            <button id="btnCancel" type="button" class="btn">Cancel</button>
+                        </div>
+
+                        <div class="blueContainer">
+
+                            <p class="control-group">
+                                <label>User</label>
+                                <span class="field">
+                                    <select name="ddlUser" id="ddlUser" class="select2" tabindex="-1" title="" style="display: none;">
+                                        <option value=""></option>
+                                    </select>
+                                </span>
+                            </p>
+
+                            <p class="control-group">
+                                <label>Role</label>
+                                <span class="field" id="tipRole">
+
+                                    <select name="ddlRoleName" id="ddlRoleName" class="select2" tabindex="-1" title="" style="display: none;">
+                                        <option value="">Select...</option>
+                                        <option value="Manager">Manager</option>
+                                        <option value="Administrator">Administrator</option>
+                                    </select>
+                                </span>
+                            </p>
+                            <p class="control-group">
+                                <span style="font-size:10px;">
+                                    Notice: Users must log into the Sharepoint Site at least once to appear in the users list.
+                                </span>
+                            </p>
+
+                        </div>
+
+                    </form>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

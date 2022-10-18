@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Licenses" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Licenses" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01008e569dd77b6c45a491b9e183dc69e1c7" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{8b31e001-2fd8-4064-8e7f-b2939b42fc7f}" Name="TrialStartDate" /><FieldRef ID="{dd9fceea-c639-4e9a-b8f8-788d13a30a43}" Name="IsInitialized" /><FieldRef ID="{d5387695-1aeb-4818-90d7-280150e66c0d}" Name="IsValid" /><FieldRef ID="{99da50ce-32ad-41e5-be1c-118e751d4952}" Name="ActivationKey" /><FieldRef ID="{6201ae28-d67d-47fc-9b95-1f381f4db571}" Name="HideFromDelve" /><FieldRef ID="{6ef3c8aa-1eec-4953-a656-2386dbbb51c0}" Name="Id" /><FieldRef ID="{08783332-5fac-494f-9c0b-d371533e0b96}" Name="ModifiedById" /><FieldRef ID="{85c2e41d-2bd8-4613-94c4-7eb2e458c262}" Name="CreatedById" /><FieldRef ID="{7e7c7562-c313-41d9-ba63-7982746b4d60}" Name="ComplianceAssetId1" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Title" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="TrialStartDate" ID="{8b31e001-2fd8-4064-8e7f-b2939b42fc7f}" DisplayName="TrialStartDate" Type="DateTime" /><Field Name="IsInitialized" ID="{dd9fceea-c639-4e9a-b8f8-788d13a30a43}" DisplayName="IsInitialized" Type="Boolean" /><Field Name="IsValid" ID="{d5387695-1aeb-4818-90d7-280150e66c0d}" DisplayName="IsValid" Type="Boolean" /><Field Name="ActivationKey" ID="{99da50ce-32ad-41e5-be1c-118e751d4952}" DisplayName="ActivationKey" Type="Note" /><Field Name="HideFromDelve" ID="{6201ae28-d67d-47fc-9b95-1f381f4db571}" DisplayName="HideFromDelve " Type="Boolean" /><Field Name="Id" ID="{6ef3c8aa-1eec-4953-a656-2386dbbb51c0}" DisplayName="Id" Type="Number" /><Field Name="ModifiedById" ID="{08783332-5fac-494f-9c0b-d371533e0b96}" DisplayName="ModifiedById" Type="Number" /><Field Name="CreatedById" ID="{85c2e41d-2bd8-4613-94c4-7eb2e458c262}" DisplayName="CreatedById" Type="Number" /><Field Name="ComplianceAssetId1" ID="{7e7c7562-c313-41d9-ba63-7982746b4d60}" DisplayName="ComplianceAssetId" Type="Text" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="Id" /><FieldRef Name="TrialStartDate" /><FieldRef Name="ActivationKey" /><FieldRef Name="IsInitialized" /><FieldRef Name="IsValid" /><FieldRef Name="HideFromDelve" /><FieldRef Name="ModifiedById" /><FieldRef Name="CreatedById" /><FieldRef Name="ComplianceAssetId1" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

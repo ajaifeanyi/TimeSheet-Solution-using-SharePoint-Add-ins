@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c341a430-1f3d-413a-bf37-c8c674bb86f1" solutionId="c341a430-1f3d-413a-bf37-c8c674bb86f1" resetWebServer="false" sharePointProductVersion="16.0" name="EmployeeOrientation" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="58be6fe1-72a7-41a1-9c77-ec6380d1ef68" />
+    <featureReference itemId="6c7c3a37-430b-4479-bbdc-91d40f86f135" />
+    <featureReference itemId="42ee5d76-6b40-48aa-acb5-6464e20fd346" />
+    <featureReference itemId="ac7967a7-a354-429c-aea7-e381696a0ff9" />
+    <featureReference itemId="bfbb9318-3abc-4bd7-a0d5-307ad4aba942" />
+    <featureReference itemId="6c861310-3cb6-4f91-baaf-2615556bf8d3" />
+    <featureReference itemId="0d1d7e7b-29e4-40d7-8758-0f02e9d5019a" />
+    <featureReference itemId="6ec0a908-2fda-4c22-aaef-0d0513a97617" />
+    <featureReference itemId="2f0d5956-6dca-4164-9283-c25456956790" />
+    <featureReference itemId="df35e296-a93b-4df8-8286-11b5cca76456" />
+    <featureReference itemId="219ce5d9-43a9-464d-96b9-44c4fc738e99" />
+    <featureReference itemId="9729f144-63cb-4cf6-85f4-07412917fa97" />
+    <featureReference itemId="2566c872-2582-49f0-8f55-7efc0b807aa9" />
+    <featureReference itemId="2bf100ae-42a0-42fc-9ada-5439fe83a51d" />
+    <featureReference itemId="0b6d0cf5-ed4b-404b-9ab2-cdf3a9e62d87" />
+    <featureReference itemId="b2600301-7bb4-424b-9170-dbf827689156" />
+    <featureReference itemId="d5bd64ac-d7de-4b2c-8b69-f567142da225" />
+    <featureReference itemId="255d86e8-0e2d-446a-a733-d599f86b3766" />
+    <featureReference itemId="dd58cc05-97c9-4336-a763-5ca7c7941bd3" />
+    <featureReference itemId="140a6478-9f87-47c4-9888-975d9b879410" />
+    <featureReference itemId="47b22528-2b66-4a8a-bf67-6d9012743b81" />
+    <featureReference itemId="5841dd65-a84f-41e7-96df-d85b6b58898d" />
+    <featureReference itemId="66d57079-ad3b-4d7c-9f6a-20a73d2a0a11" />
+    <featureReference itemId="4296cb87-c280-4759-9719-674338264ac4" />
+    <featureReference itemId="428074d3-0104-49be-8a2e-8ca28853989b" />
+    <featureReference itemId="95278c8e-1bb8-4957-84b3-3ecb1749c153" />
+    <featureReference itemId="efa00e4d-3b67-482f-8bb0-dfa8357a0dae" />
+    <featureReference itemId="fac0094e-b224-4875-aa86-28a0c740b9d4" />
+    <featureReference itemId="55177a62-c893-49da-a6ba-7740d035d4f2" />
+    <featureReference itemId="90b7b985-b9c6-45a8-8e06-9e01c82647ea" />
+    <featureReference itemId="33d3ad70-e97e-456f-afd8-b021c8b48977" />
+    <featureReference itemId="850cde74-7a8e-49a2-bb04-cfad88153790" />
+    <featureReference itemId="b59b6a2c-6374-4b3c-bb5c-1f0873841bb1" />
+    <featureReference itemId="a13424ff-7417-4ebb-8618-e876380051b6" />
+    <featureReference itemId="c7a20c6f-cc4a-4feb-91c3-75bf9e38af75" />
+    <featureReference itemId="9f8ed379-5ef0-40bb-a42b-99e9abda2bf0" />
+  </features>
+</package>

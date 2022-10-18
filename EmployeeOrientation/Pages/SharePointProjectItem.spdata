@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Pages\" Type="ElementManifest" />
+    <ProjectItemFile Source="Shared\logo.png" Target="Pages\Shared\" Type="ElementFile" />
+    <ProjectItemFile Source="Shared\Menu.html" Target="Pages\Shared\" Type="ElementFile" />
+    <ProjectItemFile Source="Shared\New.aspx" Target="Pages\Shared\" Type="ElementFile" />
+    <ProjectItemFile Source="UserRoleCreate.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="UserRolesList.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CategoryEdit.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CategoriesList.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="ToApproveByMe.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="TimesheetSummary.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Integrations.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmailTemplates.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Default.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="ProjectsList.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="ProjectEdit.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="MyRequests.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Licenses.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Settings.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="RequestFormView.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="RequestFormCreate.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="ReportsRequests.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="TimesheetReport.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="SubstituteApproversList.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="SubstituteApproverEdit.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="SubmissionsReport.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="UserProfilesList.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="UserProfileEdit.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="error.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="RequestFormEdit.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="TimesheetCostRost.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="UserGuide.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Help.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="UploadLogo.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="ImportUserProfiles.html" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="ImportProjects.html" Target="Pages\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

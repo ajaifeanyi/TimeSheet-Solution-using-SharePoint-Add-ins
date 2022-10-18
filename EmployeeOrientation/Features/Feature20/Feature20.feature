@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="72bd87ea-71ec-48b4-a193-cf8fe916303d" featureId="72bd87ea-71ec-48b4-a193-cf8fe916303d" imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="EmployeeOrientation Feature20" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel" />

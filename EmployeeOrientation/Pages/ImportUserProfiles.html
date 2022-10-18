@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <link rel="stylesheet" href="../Content/bundle_without_tables.css" type="text/css" />
+
+
+    <link rel="stylesheet" href="../Content/jquery.loading.min.css" />
+
+
+
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/jquery-ui-1.9.2.min.js"></script>
+    <script src="../Scripts/jtable/jquery.jtable.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../Scripts/modernizr.min.js"></script>
+    <script type="text/javascript" src="../Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.loadTemplate-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../Scripts/notify.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.loading.min.js"></script>
+
+
+
+    <!--Custom script-->
+    <script type="text/javascript" src="../Scripts/Custom/Common.js"></script>
+    <script type="text/javascript" src="../Scripts/Custom/ImportUserProfiles.js"></script>
+
+    <script type="text/javascript" src="../Scripts/handsontable.full.min.js"></script>
+    <link rel="stylesheet" media="screen" href="../Content/handsontable.full.min.css" />
+    <link rel="stylesheet" href="../Content/styles.css" type="text/css" />
+
+    <title>Import User Profiles</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <div class="divHeader">
+        <div class="divPreviousSite"><img src="../Images/leftarrow.png" /> <a id="previousSiteUrl" href="#" class="previousSiteUrl">Back to the previous site</a>  </div>
+        <div class="divUserInfo"> <span class="spanUserInfo" id="userWelcomeMsg">  </span></div>
+    </div>
+    <div class="divHeader divHeaderGray"> </div>
+
+    <div class="containerWrapper wrapper1500">
+
+
+        <!--Menu-->
+        <div id="containerLeft" class="containerLeft" style="float:left;width:200px;margin-top:10px; ">   </div>
+
+        <!--Main Content-->
+        <div id="containerRight" class="containerRight">
+
+
+            <div id="topHeader" class="topHeader">
+                <a href="#" id="menuExpandButton" class="menuExpandButton" data-name="hide"><img src="../Images/menu-icon.png"></a>
+                <h1>Import User Profiles</h1>
+            </div>
+
+            <div id="mainContainer" style="clear: both;">
+
+                <div id="processingForm">
+
+                    <b> Use the following steps to import user profiles from MS Excel spreadsheet </b> <br />
+                    1. Select a range of cells in MS Excel: 6 columns as below and <b>max. 50 records</b> (per single import operation).<br />
+                    2. Copy selected cells by using the keyboard shortcut <b> CTRL+C </b> <br />
+                    3. Click on the first cell on below spreadsheet and use <b>CTRL+V</b> to paste records<br />
+                    4. If there is no validation error (cells marked by red background), click "Import" button.  <br />  <br />
+
+                    <b>Data validation rules</b>  <br />
+                    • The email must be registered in Sharepoint and user needs to login at least once to the Sharepoint Site <br />
+                    • All fields except "Second Approver Email" are mandatory <br />
+
+                    <br />
+
+                    <b>Important Notices </b> <br />
+                    • Records with at least one cell marked by red color (validation error) will not be imported <br />
+
+
+                    <form id="filters" class="stdform stdform2" method="post" style="width:450px;">
+
+                        <span style="margin-top:15px;display:block;">
+                            <button id="btnImport" type="button" class="btn btn-primary">Import</button>
+                            <a id="btnClear" href="ImportUserProfiles.html" class="btn">Clear data</a>
+                            <a id="btnCancel" href="UserProfilesList.html" class="btn">Back to report</a>
+                        </span>
+
+                    </form>
+
+                </div>
+
+
+                <div id="divImportSheet" style="clear:both;padding-top:15px;margin-bottom:50px;padding-bottom:50px;"></div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

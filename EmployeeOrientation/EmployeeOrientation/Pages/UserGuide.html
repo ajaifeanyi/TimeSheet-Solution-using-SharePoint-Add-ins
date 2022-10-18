@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+    <link rel="stylesheet" href="../Content/bundle_without_tables.css" type="text/css" />
+
+    <link rel="stylesheet" href="../Content/styles.css" type="text/css" />
+
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/jquery-ui-1.9.2.min.js"></script>
+
+
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.tagsinput.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.autogrow-textarea.js"></script>
+    <script type="text/javascript" src="../Scripts/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../Scripts/modernizr.min.js"></script>
+    <script type="text/javascript" src="../Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.loadTemplate-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../Scripts/underscore-min.js"></script>
+    <script type="text/javascript" src="../Scripts/numeral.js"></script>
+
+    <!--Custom script-->
+    <script type="text/javascript" src="../Scripts/Custom/Common.js"></script>
+
+
+    <title>User Guide</title>
+</head>
+
+<body>
+
+    <!--Header-->
+    <div class="divHeader">
+        <div class="divPreviousSite"><img src="../Images/leftarrow.png" /> <a id="previousSiteUrl" href="#" class="previousSiteUrl">Back to the previous site</a>  </div>
+        <div class="divUserInfo"> <span class="spanUserInfo" id="userWelcomeMsg">  </span></div>
+    </div>
+    <div class="divHeader divHeaderGray"> </div>
+
+
+    <!--Menu-->
+    <div id="containerLeft" class="containerLeft" style="float:left;width:200px;margin-top:10px; ">   </div>
+
+    <!--Main Content-->
+    <div id="containerRight" class="containerRight">
+
+
+        <div id="topHeader" class="topHeader">
+            <a href="#" id="menuExpandButton" class="menuExpandButton" data-name="hide"><img src="../Images/menu-icon.png"></a>
+            <h1>Understanding Timesheet Plus Approval Workflow </h1>
+        </div>
+
+        <div id="mainContainer" style="clear: both;">
+
+
+            The Timesheet Plus approval workflow contains four states: Draft, Pending Approval, Approved and Rejected. <br />
+            Please see below step by step guide to completing the approval process.<br /><br />
+
+            <img src="../Images/WorkflowDiagram.png" /> <br /><br />
+
+
+            1. A user creates a new  timesheet. <br />
+            2. The user submits the timesheet for approval ("Send to approve" button). <br />
+            3. Before timesheet is approved by an approver, the user can make changes to the timesheet. <br />
+            4. The approver(s) receives an email notification of the request. <br />
+            5. The approver(s) approves or declines the approval request.<br />
+            6. The user receives an email notification of request status (approved or rejected). <br />
+            7. If the approver(s) approves the request, the process is completed.<br />
+            8. If the approver(s) rejects the request, the user must edit and resubmit the request, until the approver(s) gives final approval.<br />
+
+
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

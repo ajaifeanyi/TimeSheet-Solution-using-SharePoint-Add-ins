@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Submissions Report</title>
+    
+    <link rel="stylesheet" href="../Content/bundle.css" type="text/css" />
+
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-ui-1.9.2.min.js"></script>
+    <script type="text/javascript"  src="../Scripts/jtable/jquery.jtable.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../Scripts/modernizr.min.js"></script>
+    <script type="text/javascript" src="../Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.loadTemplate-1.4.4.min.js"></script>
+    <script type="text/javascript" src="../Scripts/numeral.js"></script>
+    <script type="text/javascript" src="../Scripts/notify.min.js"></script>
+
+    <!--Custom script-->
+    <script type="text/javascript" src="../Scripts/Custom/Common.js"></script>
+    <script type="text/javascript" src="../Scripts/Custom/SubmissionReport.js"></script>
+
+    <script src="../Scripts/handsontable.full.min.js"></script>
+
+    <link rel="stylesheet" media="screen" href="../Content/handsontable.full.min.css" />
+    <link rel="stylesheet" href="../Content/styles.css" type="text/css" />
+  
+</head>
+<body>
+     <div class="divHeader" >
+        <div class="divPreviousSite"><img src="../Images/leftarrow.png" /> <a id="previousSiteUrl" href="#" class="previousSiteUrl" >Back to the previous site</a>  </div>
+        <div class="divUserInfo"> <span class="spanUserInfo" id="userWelcomeMsg" >  </span></div>
+    </div>
+    <div class="divHeader divHeaderGray" > <span class="spanLicenseInfo" id="spanLicenseInfo" ></span>  </div>
+      
+    <div class="containerWrapper">
+        <!--Menu-->
+        <div id="containerLeft" class="containerLeft" style="float:left;width:200px;margin-top:10px; ">
+            
+        </div>     
+    <!--Main Content-->
+    <div id="containerRight" class="containerRight">
+         <div id="topHeader" class="topHeader">
+            <a href="#" id="menuExpandButton" class="menuExpandButton" data-name="hide" ></a>
+            <h1>Submissions Report</h1>
+        </div>
+
+        <div id="mainContainer" style="clear: both;">
+
+            <form id="filters" class="stdform stdform2"  method="post" style="width:450px;" >
+
+                
+                <p class="control-group">
+                    <label >Period </label>
+                    <span class="field" style="margin-left:180px;text-align:left;">
+                         <select id="ddlPeriod" style="margin:1px;padding:0px;width:120px;font-size:12px;">
+                         </select>
+
+                          <select id="ddlYear" style="margin:1px;padding:0px;width:80px;font-size:12px;">
+                         </select>
+                    
+                    </span>
+                </p>
+                <p >
+                    <label>Show only not created
+                    </label>
+                    <span class="field"  style="margin-left:180px;text-align:left;">
+                        <input style="line-height:20px !important;height:20px !important;" type="checkbox" name="chbNotCreated" id="hideCreated" /> 
+                    </span>
+                </p>  
+                <p >
+                    <label>Show only not submitted
+                    </label>
+                    <span class="field"  style="margin-left:180px;text-align:left;">
+                        <input style="line-height:20px !important;height:20px !important;" type="checkbox" name="chbNotCreated" id="hideSubmitted" /> 
+                    </span>
+                </p> 
+                              
+                <span style="margin-top:15px;display:block;width:500px;">
+                    <button id="btnRefresh" type="button" class="btn btn-primary">Refresh data</button>        
+                </span>
+
+            </form>
+
+
+            <div style="width: 800px;margin-top: 25px">
+                <div class="jtableContainer" id="TimesheetStatus"></div>
+            </div>
+
+
+        </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

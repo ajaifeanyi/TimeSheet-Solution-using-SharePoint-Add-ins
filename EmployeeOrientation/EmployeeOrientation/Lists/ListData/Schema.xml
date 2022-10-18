@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ListData" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ListData" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100e668ad7f0baf4ee0b238192bc2422f84" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{85aeabcc-2a32-404d-abe3-a1f0a186d112}" Name="Id" /><FieldRef ID="{1DAB9B48-2D1A-47b3-878C-8E84F0D211BA}" Name="_Status" /><FieldRef ID="{68d0d54c-37a5-495a-9581-2e3774d8c297}" Name="Created1" /><FieldRef ID="{8867eb41-8957-42fe-afbc-24bbb6c8e39c}" Name="FirstDayOfPeriod" /><FieldRef ID="{b7d881b1-e871-4c84-8793-8a92b22e0aaa}" Name="Period" /><FieldRef ID="{64cd1a79-4b2e-4732-bbfa-ccd74e40ea1e}" Name="Year" /><FieldRef ID="{d75a16a7-ae70-476b-92a9-30f2e485a78b}" Name="TotalHour" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="Id" ID="{85aeabcc-2a32-404d-abe3-a1f0a186d112}" DisplayName="Id" Type="Number" Required="TRUE" /><Field ID="{1DAB9B48-2D1A-47b3-878C-8E84F0D211BA}" Name="_Status" Group="$Resources:core,Document_Columns;" Type="Choice" DisplayName="$Resources:core,Status;" SourceID="http://schemas.microsoft.com/sharepoint/v3/fields" StaticName="_Status" FillInChoice="TRUE" Required="TRUE"><CHOICES><CHOICE>$Resources:core,_Status_NotStarted;</CHOICE><CHOICE>$Resources:core,_Status_Draft;</CHOICE><CHOICE>$Resources:core,_Status_Reviewed;</CHOICE><CHOICE>$Resources:core,_Status_Scheduled;</CHOICE><CHOICE>$Resources:core,_Status_Published;</CHOICE><CHOICE>$Resources:core,_Status_Final;</CHOICE><CHOICE>$Resources:core,_Status_Expired;</CHOICE></CHOICES><Default>$Resources:core,_Status_NotStarted;</Default></Field><Field Name="Created1" ID="{68d0d54c-37a5-495a-9581-2e3774d8c297}" DisplayName="Created" Type="Text" Required="TRUE" /><Field Name="FirstDayOfPeriod" ID="{8867eb41-8957-42fe-afbc-24bbb6c8e39c}" DisplayName="FirstDayOfPeriod" Type="Choice" Required="TRUE" /><Field Name="Period" ID="{b7d881b1-e871-4c84-8793-8a92b22e0aaa}" DisplayName="Period" Type="Choice" Required="TRUE" /><Field Name="Year" ID="{64cd1a79-4b2e-4732-bbfa-ccd74e40ea1e}" DisplayName="Year" Type="Choice" Required="TRUE" /><Field Name="TotalHour" ID="{d75a16a7-ae70-476b-92a9-30f2e485a78b}" DisplayName="TotalHours" Type="Text" Required="TRUE" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Id" /><FieldRef Name="_Status" /><FieldRef Name="Created1" /><FieldRef Name="FirstDayOfPeriod" /><FieldRef Name="Period" /><FieldRef Name="Year" /><FieldRef Name="TotalHour" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
